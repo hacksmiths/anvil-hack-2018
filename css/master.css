@@ -387,7 +387,8 @@ h1.page-title {
   }
 }
 .conference {
-  background: #2c354b;
+  background: -webkit-linear-gradient(bottom, #333, black);
+  background: linear-gradient(to bottom, #333, black);
   color: #fff;
   text-align: center;
   padding: 2em 0 3em;
