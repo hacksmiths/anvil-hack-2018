@@ -277,7 +277,7 @@ h1.page-title {
   margin: 0 auto;
   display: block;
   padding: 0 2em;
-  padding: 2em 0 1em;
+  padding: 1em 0 1em;
   margin-top: 0;
   text-align: center;
 }
@@ -286,14 +286,18 @@ h1.page-title {
   list-style-type: none;
   overflow: auto;
   margin: 0 0.75em;
-  margin-top: 1em;
+  margin-top: 2em;
 }
 .partners ul li a {
   overflow: auto;
   text-decoration: none;
 }
 .partners ul li a img {
-  height: 4rem;
+  height: 3rem;
+}
+
+.partners ul.small {
+  padding-top: 0;
 }
 
 .partners ul.small li a img {
