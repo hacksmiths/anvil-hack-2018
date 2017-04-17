@@ -273,7 +273,7 @@ h1.page-title {
   background: white;
 }
 .partners ul {
-  max-width: 960px;
+  max-width: 1100px;
   margin: 0 auto;
   display: block;
   padding: 1em 0 1em;
@@ -298,6 +298,11 @@ h1.page-title {
 
 .partners ul li a img.pad {
   padding: 0.25em;
+  box-sizing: border-box;
+}
+
+.partners ul li a img.double-pad {
+  padding: 0.5em;
   box-sizing: border-box;
 }
 
