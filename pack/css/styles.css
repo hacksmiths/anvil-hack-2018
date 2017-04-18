@@ -12,15 +12,33 @@ body{
 }
 .block > .block-header{
   width:100%;
+  margin-bottom: 1em;
+  margin-top: 1em;
+}
+
+#schedule {
+  box-shadow: none;
+  border-radius: 0;
+  border: 1px solid rgb(189, 144, 30);
+  border-top: none;
 }
 
 
 .info-item{
   background-color: white;
-  height:15.5em;
   font-size: 1.5em;
   border: 1px solid rgb(189, 144, 30);
   padding:1em;
+}
+
+#challenges table td {
+  text-align: left;
+  padding-left: 1em;
+}
+
+.chal-per .info-item {
+  width: 100% !important;
+  display: block;
 }
 
 .media{
@@ -28,10 +46,6 @@ body{
 }
 .panel{
   padding: 1em;
-}
-
-#schedule{
-  display: none;
 }
 
 #mentor-directory{
@@ -57,4 +71,16 @@ body{
 }
 #person-on-duty > .media > p{
   margin-bottom:3px;
+}
+
+.row {
+  margin-left: 0;
+  margin-right: 0;
+  margin-top: 1em;
+  display: block;
+}
+
+.person {
+  display: block;
+  margin: 1em 0 2em;
 }

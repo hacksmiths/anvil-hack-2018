@@ -9,6 +9,7 @@
     <link rel="stylesheet" type="text/css" href="css/styles.css">
     <!-- Javascript -->
     <script src="https://code.jquery.com/jquery-3.2.1.min.js"  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="  crossorigin="anonymous"></script>
+    <script src="https://cdn.rawgit.com/liabru/jquery-match-height/2446ac65/dist/jquery.matchHeight-min.js"></script>
     <script src="js/scripts.js"></script>
   </head>
   <body>
@@ -16,8 +17,8 @@
 
       <!-- Next Event Countdown -->
       <div class="block">
-        <h1 class="block-header">Schedule</h1>
-        <div class="row block-content">
+        <h1 class="block-header">Anvil Hack III Info Pack</h1>
+        <div class="row block-content first-box">
           <div class="info-item col-xs-12 col-md-6">
             <h1>Happening Now:</h1>
             <h2 id="currentevent-name"></h2>
@@ -28,7 +29,6 @@
             <h2 id="nextevent-name"></h2>
             <p>Happening in:</p>
             <h1 id="counter"></h1>
-            <p id="schedule-toggle">See the Full Schedule Here <br /> <span class="glyphicon glyphicon-chevron-down" aria-hidden="true"></span></p>
           </div>
         </div>
 
@@ -155,41 +155,71 @@
       </div>
 
 
-      <div class="block">
+      <div class="block chal-per">
           <div class="row block-content">
-            <div id="challenges" class="info-item col-xs-12 col-md-6">
+            <div id="challenges" class="info-item col-xs-12 col-md-12">
               <h2>Challenges</h2>
               <div>
                 <table class="table table-hover">
                   <tr>
-                    <th>Audio</th>
+                    <th>Best Audio Hack</th>
                     <td>Make a cool project doing something interesting using sound</td>
                   </tr>
                   <tr>
-                    <th>Hardware</th>
-                    <td>Make a cool project utilising some form of hardware</td>
+                    <th>Best Hardware Hack</th>
+                    <td>Make a cool project building or using hardware</td>
                   </tr>
                   <tr>
-                    <th>Visual</th>
+                    <th>Best Visual Hack</th>
                     <td>Make a cool project showcasing awesome visuals</td>
+                  </tr>
+                  <tr>
+                    <th>Spotify</th>
+                    <td>Best use of Spotify's developer tools</td>
+                  </tr>
+                  <tr>
+                    <th>Twilio</th>
+                    <td>Best use of Twilio's tools</td>
+                  </tr>
+                  <tr>
+                    <th>Autodesk</th>
+                    <td>Best use of Autodesk's tools</td>
+                  </tr>
+                  <tr>
+                    <th>MLH</th>
+                    <td>Best use of AWS, best domain from domain.com, best hack to reduce online harassment</td>
+                  </tr>
+                  <tr>
+                    <th>.tech Domains</th>
+                    <td>Best domain from .tech Domains</td>
                   </tr>
                 </table>
               </div>
             </div>
-            <div id="person-on-duty" class="info-item col-xs-12 col-md-6">
+            <div id="person-on-duty" class="info-item col-xs-12 col-md-12">
               <div class="media">
-                <h3>Need to talk to someone?</h3>
-                <div class="col-xs-6">
+                <h3>Uncomfortable? Speak to:</h3>
+                <div class="col-xs-4 person">
                     <img class="img-thumbnail volunteerpic" src="https://avatars.io/facebook/phazonoverload"/>
-                    <p>Days - Kevin Lewis</p>
+                    <p>Days - Kevin Lewis (MLH)</p>
                 </div>
-                <div class="col-xs-6">
+                <div class="col-xs-4 person">
+                    <img class="img-thumbnail volunteerpic" src="https://avatars.io/facebook/nathanael.okenwa"/>
+                    <p>Days - Nathaniel Okenwa (Hacksmiths)</p>
+                </div>
+                <div class="col-xs-4 person">
                     <img class="img-thumbnail volunteerpic" src="https://avatars.io/facebook/uveavanto"/>
-                    <p>Nights - Yuvesh Tulsianis</p>
+                    <p>Nights - Yuvesh Tulsiani (Hacksmiths)</p>
                 </div>
-                <p><a href="mailto:hacksmiths@gold.ac.uk" target="_top"><span class="glyphicon glyphicon-envelope" aria-hidden="true"></span> Prefer to send an email?</a></p>
-                <p>Need to talk urgently? Call 03333442641</p>
-                <p id="mentor-directory-toggle">Need specific Help? Check out our Mentors <br /> <span class="glyphicon glyphicon-chevron-down" aria-hidden="true"></span></p>
+                <br>
+
+                <p>Contact all Hacksmiths in case of incident - <a href="mailto:hacksmiths@gold.ac.uk" target="_top"><span class="glyphicon glyphicon-envelope" aria-hidden="true"></span> hacksmiths@gold.ac.uk</a> or <a href="tel:03333442641"><i class="fa fa-phone"></i> 03333442641</a></p>
+
+                <p>Contact Major League Hacking in case of incident - <a href="mailto:incidents@mlh.io" target="_top"><span class="glyphicon glyphicon-envelope" aria-hidden="true"></span> incidents@mlh.io</a> or <a href="tel:08008085675"><i class="fa fa-phone"></i> 08008085675</a></p>
+                
+                <br>
+
+                <p id="mentor-directory-toggle">Need technical Help? Check out our awesome Mentors <br /> <span class="glyphicon glyphicon-chevron-down" aria-hidden="true"></span></p>
               </div>
             </div>
         </div>

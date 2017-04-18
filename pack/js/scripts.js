@@ -1,7 +1,8 @@
 $(document).ready(function(){
-    $("#schedule-toggle").click(function(){
-        $("#schedule").slideToggle("slow");
-    });
+  window.setTimeout(function(){
+    $(".info-item").matchHeight();
+  }, 2000);
+    
 });
 
 $(document).ready(function(){
@@ -9,25 +10,28 @@ $(document).ready(function(){
         $("#mentor-directory").slideToggle("slow");
     });
 
-    var mentors = [ new Mentor("Chiara Massironi","Sendgrid","Email","@CMassironi"),
-                    new Mentor("Phil Nash","Twilio","Ruby, Javascript & APIs","@philnash"),
+    var mentors = [ new Mentor("Phil Nash","Twilio","Ruby, Javascript & APIs","@philnash"),
                     new Mentor("Gareth Wilson","Glitch","Glitch & Javascript","@_gw"),
                     new Mentor("Lou Lemaistre","The Family","Designer/Developer","@Lou_mstr"),
                     new Mentor("Nevo Segal","","Deep Learning, Audio & Javascript","@nevosegal"),
                     new Mentor("Christopher Fonseka","ROLI","Littlefoot, BLOCKS SDK, Juce, Seaboard, C++ & MIDI","@XmasRights"),
-                    new Mentor("Jack Armitage","Bela","Digital Musical Instruments",""),
-                    new Mentor("Giulio Moro","Bela","Everything Bela",""),
+                    new Mentor("Jack Armitage","Bela","Digital Musical Instruments","@BelaPlatform"),
+                    new Mentor("Robert Jack","Bela","Bela, Pure Data & Musical Instruments","@rjack0101"),
                     new Mentor("Alex Bucknall","Pycom","Electronics, Python, & C/C++","@AlexRBucknall"),
-                    new Mentor("Jojoe Whitfield","Indee","All of Them",""),
+                    new Mentor("Jonjoe Whitfield","Indee","Ruby, JavaScript, Python - throw me anything","@TheDigitalDinlo"),
                     new Mentor("Gergely Imreh","Resin","Hardware & Python","@imrehg"),
-                    new Mentor("Serge Alleyne","The Family","I can help with finding these first users and iterating. Also share startup methods (growth hacking, operations, culture) that you can apply to own projects.","@salleyne"),
+                    new Mentor("Serge Alleyne","The Family","How to communicate your ideas, user experience","@salleyne"),
                     new Mentor("Hugh Rawlinson","Spotify","Audio Programming, Music Information Retrieval & Javascript/Web","@hughrawlinson"),
-                    new Mentor("Robert Jack","Bela","Bela, Pure Data & Musical Instruments","")
+                    new Mentor("Arielle Vaniderstine","Spotify","Front end web development","@imariari"),
+                    new Mentor("Chiara Massironi","Sendgrid","Email, Comms, Communities","@CMassironi"),
+                    new Mentor("Michael Zbyszynski","EAVI @ Goldsmiths","Machine learning, music, sound, C++, Javascript","@EAVI_Goldsmiths"),
+                    new Mentor("Matt Johnson","Bare Conductive","Physical making, Arduino, ideation","@mattmjohnson_"),
+                    new Mentor("Steve Cox","Autodesk","Product design, CAD modelling, 3D printing","@SteveCox3D"),
 
     ];
 
     for (var i=0;i<=mentors.length;i++){
-      $("#mentor-directory-content").append('<div class="col-xs-6 col-md-4"><div class="media"><div class="col-xs-4"><a href="#"><img class="img-thumbnail" src="https://avatars.io/twitter/'+mentors[i].twitterhandle+'"/></a></div><div class="col-xs-8"><h4 class="media-heading">'+mentors[i].name+'</h4><p>From: '+mentors[i].sponsor+'</p><p>Skills: '+mentors[i].skills+'</p><p>Twitter Handle: '+mentors[i].twitterhandle+'</p></div></div></div>');
+      $("#mentor-directory-content").append('<div class="col-xs-6 col-md-4"><div class="media"><div class="col-xs-4"><a href="http://twitter.com/'+mentors[i].twitterhandle+'"><img class="img-thumbnail" src="https://avatars.io/twitter/'+mentors[i].twitterhandle+'"/></a></div><div class="col-xs-8"><h4 class="media-heading">'+mentors[i].name+'</h4><p>From: '+mentors[i].sponsor+'</p><p>Skills: '+mentors[i].skills+'</p><p>Twitter:<a href="http://twitter.com/'+mentors[i].twitterhandle+'"> '+mentors[i].twitterhandle+'</a></p></div></div></div>');
     }
 });
 class Mentor{
