@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Anvil Hack III - Info Pack</title>
+    <meta property="og:image" content="http://anvil.hacksmiths.club/img/og.png">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <!-- CSS -->
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+    <!-- Javascript -->
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="  crossorigin="anonymous"></script>
+    <script src="js/scripts.js"></script>
+  </head>
+  <body>
+    <div class="container">
+
+      <!-- Next Event Countdown -->
+      <div class="block">
+        <h1 class="block-header">Schedule</h1>
+        <div class="row block-content">
+          <div class="info-item col-xs-12 col-md-6">
+            <h1>Happening Now:</h1>
+            <h2 id="currentevent-name"></h2>
+            <p id="currentevent-details"></p>
+          </div>
+          <div id="Next-item" class="info-item col-xs-12 col-md-6">
+            <h1>Coming Up Next:</h1>
+            <h2 id="nextevent-name"></h2>
+            <p>Happening in:</p>
+            <h1 id="counter"></h1>
+            <p id="schedule-toggle">See the Full Schedule Here <br /> <span class="glyphicon glyphicon-chevron-down" aria-hidden="true"></span></p>
+          </div>
+        </div>
+
+        <!--Dropdown Schedule -->
+        <div id="schedule" class="panel">
+          <table class="table table-hover">
+            <tr>
+              <th>Day</th>
+              <th>Time</th>
+              <th>Event</th>
+              <th>Details</th>
+            </tr>
+            <tr>
+              <th>Saturday</th>
+              <th>10:00</th>
+              <th>Registration &amp; Breakfast</th>
+              <th>...</th>
+            </tr>
+            <tr>
+              <th></th>
+              <th>11:00</th>
+              <th>Opening Ceremony</th>
+              <th>...</th>
+            </tr>
+            <tr>
+              <th></th>
+              <th>12:00</th>
+              <th>Hacking Starts &amp; Lunch</th>
+              <th>...</th>
+            </tr>
+            <tr>
+              <th></th>
+              <th>12:30</th>
+              <th>Team building Workshop</th>
+              <th>...</th>
+            </tr>
+            <tr>
+              <th></th>
+              <th>13:00</th>
+              <th>Spotify Machine Learning Workshop</th>
+              <th>...</th>
+            </tr>
+            <tr>
+              <th></th>
+              <th>14:00</th>
+              <th>AutoDesk Workshop</th>
+              <th>...</th>
+            </tr>
+            <tr>
+              <th></th>
+              <th>15:00</th>
+              <th>Visuals with P5.js - Workshop</th>
+              <th>...</th>
+            </tr>
+            <tr>
+              <th></th>
+              <th>16:00</th>
+              <th>Audio Basics - Workshop</th>
+              <th>...</th>
+            </tr>
+            <tr>
+              <th></th>
+              <th>17:00</th>
+              <th>User Experience - Workshop</th>
+              <th>...</th>
+            </tr>
+            <tr>
+              <th></th>
+              <th>18:00</th>
+              <th>Electronics - Workshop</th>
+              <th>...</th>
+            </tr>
+            <tr>
+              <th></th>
+              <th>19:00</th>
+              <th>Dinner</th>
+              <th>...</th>
+            </tr>
+            <tr>
+              <th></th>
+              <th>20:00</th>
+              <th>Twilio - Workshop</th>
+              <th>...</th>
+            </tr>
+            <tr>
+              <th></th>
+              <th>21:00</th>
+              <th>Communities -Talk/Panel/Workshop</th>
+              <th>...</th>
+            </tr>
+            <tr>
+              <th></th>
+              <th>22:00</th>
+              <th>Werewolf Game</th>
+              <th>...</th>
+            </tr>
+            <tr>
+              <th>Sunday</th>
+              <th>08:00</th>
+              <th>Breakfast</th>
+              <th>...</th>
+            </tr>
+            <tr>
+              <th></th>
+              <th>12:00</th>
+              <th>Hacking Ends &amp; Lunch</th>
+              <th>...</th>
+            </tr>
+            <tr>
+              <th></th>
+              <th>13:00</th>
+              <th>Presentations</th>
+              <th>...</th>
+            </tr>
+            <tr>
+              <th></th>
+              <th>15:00</th>
+              <th>Prizes &amp; Closing Ceremony</th>
+              <th>...</th>
+            </tr>
+          </table>
+        </div>
+
+      </div>
+
+
+      <div class="block">
+          <div class="row block-content">
+            <div id="challenges" class="info-item col-xs-12 col-md-6">
+              <h2>Challenges</h2>
+              <div>
+                <table class="table table-hover">
+                  <tr>
+                    <th>Audio</th>
+                    <td>Make a cool project doing something interesting using sound</td>
+                  </tr>
+                  <tr>
+                    <th>Hardware</th>
+                    <td>Make a cool project utilising some form of hardware</td>
+                  </tr>
+                  <tr>
+                    <th>Visual</th>
+                    <td>Make a cool project showcasing awesome visuals</td>
+                  </tr>
+                </table>
+              </div>
+            </div>
+            <div id="person-on-duty" class="info-item col-xs-12 col-md-6">
+              <div class="media">
+                <h3>Need to talk to someone?</h3>
+                <div class="col-xs-6">
+                    <img class="img-thumbnail volunteerpic" src="https://avatars.io/facebook/phazonoverload"/>
+                    <p>Days - Kevin Lewis</p>
+                </div>
+                <div class="col-xs-6">
+                    <img class="img-thumbnail volunteerpic" src="https://avatars.io/facebook/uveavanto"/>
+                    <p>Nights - Yuvesh Tulsianis</p>
+                </div>
+                <p><a href="mailto:hacksmiths@gold.ac.uk" target="_top"><span class="glyphicon glyphicon-envelope" aria-hidden="true"></span> Prefer to send an email?</a></p>
+                <p>Need to talk urgently? Call 03333442641</p>
+                <p id="mentor-directory-toggle">Need specific Help? Check out our Mentors <br /> <span class="glyphicon glyphicon-chevron-down" aria-hidden="true"></span></p>
+              </div>
+            </div>
+        </div>
+        <!--Mentor Directory -->
+        <div id="mentor-directory" class="panel">
+          <div id="mentor-directory-content" class="panel-content row">
+          </div>
+        </div>
+      </div>
+
+
+      <div class="block">
+        <div class="row block-content">
+          <div class="info-item col-xs-12 col-md-6">
+            <img class="img-rounded" src="https://hardware.mlh.io/assets/shared/logos/mlh-hardware-lab-color-733073aefd0771306f5e3668f37738b14ca8852a72703cc44560d75f50a2ef1f.svg" alt="Mlh hardware lab color">
+            <p>
+              The MLH Hardware Lab contains the latest and greatest hardware gadgets for you to use at Anvil Hack III. You can borrow these devices to learn about them and use them in your projects
+            </p>
+            <a href="https://hardware.mlh.io/">Click Here to get some hardwware</a>
+          </div>
+          <div class="info-item col-xs-12 col-md-6">
+            <h1>Please leave us some Feedback</h1>
+            <a href="#">
+              <h1><span class="glyphicon glyphicon-comment" aria-hidden="true"></span></h1>
+            </a>
+          </div>
+        </div>
+      </div>
+
+
+    </div>
+    <!-- Hacksmiths Header -->
+    <script src="https://cdn.rawgit.com/hacksmiths/web-header/master/script.js"></script>
+  </body>
+</html>

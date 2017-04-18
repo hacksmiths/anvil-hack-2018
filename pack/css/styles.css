@@ -1,0 +1,60 @@
+body{
+  background-image: url(../images/bg-texture.png);
+  background-position-x:0%;
+  background-position-y:0%;
+  background-repeat: repeat-x repeat-y;
+  background-size: auto;
+}
+.block {
+  margin-bottom: 3em;
+  width: 100%;
+  text-align: center;
+}
+.block > .block-header{
+  width:100%;
+}
+
+
+.info-item{
+  background-color: white;
+  height:15.5em;
+  font-size: 1.5em;
+  border: 1px solid rgb(189, 144, 30);
+  padding:1em;
+}
+
+.media{
+  margin-bottom: 1em;
+}
+.panel{
+  padding: 1em;
+}
+
+#schedule{
+  display: none;
+}
+
+#mentor-directory{
+  text-align: left;
+  height:inherit;
+  display:none;
+}
+
+#person-on-duty > div{
+  width:100%;
+}
+
+.glyphicon-comment{
+  font-size: 5em;
+}
+
+.volunteerpic{
+  width:100px;
+  height:100px;
+}
+#person-on-duty > .media > h3{
+  margin-top:0px;
+}
+#person-on-duty > .media > p{
+  margin-bottom:3px;
+}
