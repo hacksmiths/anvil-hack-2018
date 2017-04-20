@@ -2,7 +2,7 @@ $(document).ready(function(){
   window.setTimeout(function(){
     $(".info-item").matchHeight();
   }, 2000);
-    
+
 });
 
 $(document).ready(function(){
@@ -30,7 +30,7 @@ $(document).ready(function(){
 
     ];
 
-    for (var i=0;i<=mentors.length;i++){
+    for (var i=0;i<=mentors.length-1;i++){
       $("#mentor-directory-content").append('<div class="col-xs-6 col-md-4"><div class="media"><div class="col-xs-4"><a href="http://twitter.com/'+mentors[i].twitterhandle+'"><img class="img-thumbnail" src="https://avatars.io/twitter/'+mentors[i].twitterhandle+'"/></a></div><div class="col-xs-8"><h4 class="media-heading">'+mentors[i].name+'</h4><p>From: '+mentors[i].sponsor+'</p><p>Skills: '+mentors[i].skills+'</p><p>Twitter:<a href="http://twitter.com/'+mentors[i].twitterhandle+'"> '+mentors[i].twitterhandle+'</a></p></div></div></div>');
     }
 });
@@ -73,6 +73,17 @@ $(document).ready(function(){
                   new Event("--","December 23, 2017 15:01:00","--")
   ];
 
+  //Populate table for Schedule
+  for (i=1; i<=events.length-2;i++){
+    var hr=Math.floor((events[i].time % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+    if (hr<=9){hr = "0"+hr.toPrecision(1);}
+    var min=Math.floor((events[i].time % (1000 * 60 * 60)) / (1000 * 60))
+    if (min<=9){min = "0"+min.toPrecision(1);}
+    if(i<=14){$("#sat").after("<tr><th></th><th>"+hr+":"+min+"</th><th>"+events[i].name+"</th><th>"+events[i].details+"</th></tr>")};
+    if(i<=14){$("#sun").after("<tr><th></th><th>"+hr+":"+min+"</th><th>"+events[i].name+"</th><th>"+events[i].details+"</th></tr>")};
+
+  }
+  // Timer
 vars = setInterval(function(){
   var now = new Date().getTime();
 
