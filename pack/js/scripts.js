@@ -74,13 +74,13 @@ $(document).ready(function(){
   ];
 
   //Populate table for Schedule
-  for (i=1; i<=events.length-2;i++){
+  for (i=events.length-2; i>=1;i--){
     var hr=Math.floor((events[i].time % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
     if (hr<=9){hr = "0"+hr.toPrecision(1);}
     var min=Math.floor((events[i].time % (1000 * 60 * 60)) / (1000 * 60))
     if (min<=9){min = "0"+min.toPrecision(1);}
     if(i<=14){$("#sat").after("<tr><th></th><th>"+hr+":"+min+"</th><th>"+events[i].name+"</th><th>"+events[i].details+"</th></tr>")};
-    if(i<=14){$("#sun").after("<tr><th></th><th>"+hr+":"+min+"</th><th>"+events[i].name+"</th><th>"+events[i].details+"</th></tr>")};
+    if(i>14){$("#sun").after("<tr><th></th><th>"+hr+":"+min+"</th><th>"+events[i].name+"</th><th>"+events[i].details+"</th></tr>")};
 
   }
   // Timer
