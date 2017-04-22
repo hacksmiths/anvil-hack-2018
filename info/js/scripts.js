@@ -52,8 +52,8 @@ $(document).ready(function(){
 
   //See Event Class constructor underneath
   var events = [  new Event("Get Your Tickets Now","April 10, 2017 15:09:58","--"),
-                  new Event("Registration & Breakfast","April 22, 2017 10:00:00","..."),
-                  new Event("Opening Ceremony","April 22, 2017 11:00:00","..."),
+                  new Event("Registration & Breakfast","April 22, 2017 09:00:00","..."),
+                  new Event("Opening Ceremony","April 22, 2017 10:00:00","..."),
                   new Event("Hacking Starts & Lunch","April 22, 2017 12:00:00","..."),
                   new Event("Teambuilding - Workshop","April 22, 2017 12:30:00","..."),
                   new Event("Spotify - Machine Learning - Workshop","April 22, 2017 13:00:00","..."),
