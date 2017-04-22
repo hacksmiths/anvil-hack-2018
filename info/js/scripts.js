@@ -52,7 +52,7 @@ $(document).ready(function(){
 
   //See Event Class constructor underneath
   var events = [  new Event("Get Your Tickets Now","April 10, 2017 15:09:58","--"),
-                  new Event("Registration & Breakfast","April 22, 2017 08:00:00","..."),
+                  new Event("Registration & Breakfast","April 22, 2017 09:00:00","..."),
                   new Event("Opening Ceremony","April 22, 2017 11:00:00","..."),
                   new Event("Hacking Starts & Lunch","April 22, 2017 12:00:00","..."),
                   new Event("Teambuilding - Workshop","April 22, 2017 12:30:00","..."),
@@ -76,6 +76,7 @@ $(document).ready(function(){
   //Populate table for Schedule
   for (i=events.length-2; i>=1;i--){
     var hr=Math.floor((events[i].time % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+    console.log(hr);
     if (hr<=9){hr = "0"+hr.toPrecision(1);}
     var min=Math.floor((events[i].time % (1000 * 60 * 60)) / (1000 * 60))
     if (min<=9){min = "0"+min.toPrecision(1);}
