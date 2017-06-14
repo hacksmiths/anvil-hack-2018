@@ -230,6 +230,7 @@ h1.page-title {
   display: block;
   margin: 0 auto;
   margin-bottom: 1em;
+  height: 10rem;
 }
 .hero * {
   color: #faf5f0;
@@ -343,8 +344,7 @@ h1.page-title {
   color: inherit;
 }
 .conduct {
-  background: -webkit-linear-gradient(bottom, #333, black);
-  background: linear-gradient(to bottom, #333, black);
+  background: #333;
 
   margin-top: 2em;
   padding-bottom: 0;
@@ -370,6 +370,10 @@ h1.page-title {
   }
   .conduct a:last-child {
     margin-bottom: 0;
+  }
+  .hero img {
+    width: 100%;
+    height: auto;
   }
 }
 .faq {
