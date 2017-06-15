@@ -233,7 +233,7 @@ h1.page-title {
   display: block;
   margin: 0 auto;
   margin-bottom: 1em;
-  height: 10rem;
+  height: 8rem; 
 }
 .hero * {
   color: #faf5f0;
